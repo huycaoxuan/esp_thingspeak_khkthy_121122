@@ -19,9 +19,9 @@ basic.forever(function () {
     ESP8266ThingSpeak.connectThingSpeak(
     "api.thingspeak.com",
     "RYS3R5YH9P27PRWN",
-    input.temperature(),
-    input.lightLevel(),
-    0,
+    pins.analogReadPin(AnalogPin.P0),
+    pins.analogReadPin(AnalogPin.P1),
+    pins.analogReadPin(AnalogPin.P2),
     0,
     0,
     0,
